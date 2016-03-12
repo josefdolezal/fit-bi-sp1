@@ -1,0 +1,8 @@
+# Konzultace 4
+
+## Otázky
+* Pokud některé akce vykonává systém, kde se o nich zmínit?
+* Zmiňují se akce vykonané systémem v UC?
+* Implementace
+  * Primární zdroj informací k implementaci? - aby se na něco nezapomnělo
+    * Např. zmínka o funkci v UC
