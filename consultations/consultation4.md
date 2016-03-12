@@ -9,3 +9,4 @@
 * Kde se zaznamenávají technické detaily?
   * povinná pole registračního formuláře
   * vlastnosti produktu (EAN, název, ...)
+* XML pro vstup bude mít specifickou konfiguraci, kde jí v analýze zmínit?
