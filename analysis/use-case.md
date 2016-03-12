@@ -1,5 +1,11 @@
 # Případy užití
 ## Účastníci
+### Návštěvník
+Osoba, která přišla do webového rozhraní aplikace a není v současné chvíli
+přihlášena. Tato osoba může přistupovat pouze k veřejnému obsahu. Pro přístup
+k uzavřené části aplikace se musí přihlásit nebo zaregistrovat (pokud ještě
+svůj účet nemá).
+
 ### Uživatel
 Osoba, která se do systému registrovala pomocí emailové adresy a hesla. Na
 základě registrace může zakládat nové kampaně sledování konkurence, upřesnit
@@ -18,23 +24,24 @@ systému, může jeho účet administrátor zablokovat.
 #### UC1 - Registrace uživatele
 #### UC2 - Změna údajů uživatele
 #### UC3 - Zablokování uživatele
+#### UC4 - Přihlášení uživatele
 
 ### Správa kampaní
-#### UC4 - Vytvoření kampaně
-#### UC5 - Přidání sledovaných produktů do existujíc´
-#### UC6 - Úprava kampaně
+#### UC5 - Vytvoření kampaně
+#### UC6 - Přidání sledovaných produktů do kampaně
+#### UC7 - Úprava kampaně
 
 ### Evidence konkurence
-#### UC7  - Přidání konkurenčního obchodu
-#### UC8  - Úprava údajů o produktu
-#### UC9  - Úprava údajů o obchodu
-#### UC10 - Správa sledovaných produktů
-#### UC11 - Správa sledovaných obchodů
+#### UC8  - Přidání konkurenčního obchodu
+#### UC9  - Úprava údajů o produktu
+#### UC10 - Úprava údajů o obchodu
+#### UC11 - Správa sledovaných produktů
+#### UC12 - Správa sledovaných obchodů
 
 ### Prioritizace konkurence
-#### UC12 - Nastavení priority
-#### UC13 - Vyhledání prioritní konkurence
+#### UC13 - Nastavení priority
+#### UC14 - Vyhledání prioritní konkurence
 
 ### Výstup sledování
-#### UC14 - Zobrazení výstupu
-#### UC15 - Exportování výstupu
+#### UC15 - Zobrazení výstupu
+#### UC16 - Exportování výstupu
