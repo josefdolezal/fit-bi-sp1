@@ -44,6 +44,14 @@ adresy.
 Uživatel má možnost upravit informace ve svém profilu, které zadal během
 registrace.
 
+* Případ užití začíná, na hlavní stránce administrace, když Uživatel chce změnit
+informace o svém účtu.
+* Uživatel v aplikaci vybere záložku "Můj účet".
+* Systém zobrazí formulář s detailními informaceni o účtu Uživatele.
+* Uživatel aktualizuje informace a jejich uložení potvrdí tlačítkem "Uložit".
+* Systém ověří správnost zadaných údajů a data uloží.
+* Změna údajů proběhla a případ užití tím končí.
+
 #### UC3 - Zablokování uživatele
 Dovoluje Administrátorovi znemožnit přístup Uživateli k jeho účtu, nevyužívá-li
 systém v souladu s podmínkami používání nebo je-li to bezpodmínečně nutné.
