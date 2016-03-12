@@ -116,10 +116,43 @@ si uživatel přeje sledovat jednoznačně určené EAN kódem. Vložit lze i pr
 který kampaň už obsahuje, v takovém případě bude existující produkt
 aktualizován.
 
+* Tento případ užití začíná na hlavní stránce administrace. Uživatel chce do
+existující kampaně přidat nové produkty. Klikne na odkaz "Kampaně".
+* Systém zobrazí seznam aktivních kampaní, které Uživatel již dříve vytvořil.
+* Uživatel vyhledá kampaň, do které chce nové produkty přidat. A klikne na
+odkaz "Přidat produkty ke sledování".
+* Systém zobrazí formulář pro nahrání souboru XML (podle uvedené specifikace)
+se seznamem produktů.
+* Systém ověří validitu nahraného souboru. Je-li soubor validní podle
+specifikace, nové produkty budou v dalším cyklu také sledovány. Nacházejí-li
+se v souboru produkty již dříve přidané do kampaně, systém aktualizuje jejich
+vlastnosti tak, aby odpovídaly vložným datům, ale jejich historie zůstane
+nezměněna.
+* Uživatel je přesměrován na detail upravované kampaně a je informován o
+úspěšném přidání. Přidávání produktů je u konce.
+
+* Alternativně: Uživatel je na stránce kampaně
+* Alternativně: Uživatel zadá produkty ručně
+
 #### UC7 - Úprava kampaně
 Systém dovoluje uživateli vlastnosti kampaně měnit během její existence. Pokud
 to povaha změny dovoluje, její efekt se projeví ihned. V opačném případě se
 efekt projeví až s odpovídajícím zpožděním.
+
+* Tento případ užití začíná na hlavní stránce administrace. Uživatel kline na
+odkaz "Kampaně".
+* Systém zobrazí seznam aktivních kampaní, které uživatel již dříve přidal.
+* Uživatel vyhledá kampaň, kterou chce editovat a klikne na odkaz "Nastavit
+kampaň".
+* Systém zobrazí formulář s informacemi o kampani a seznam produktů, které
+kampaň obsahuje.
+* Uživatel může změnit veškeré nastavení kampaně včetně seznamu produktů. Po
+provedení změn Uživatel uložení dat potvrdí tlačítkem "Uložit".
+* Systém provede validaci dat a přesměruje uživatele na detail editované
+kampaně.
+* Uživateli se zobrazí zpráva o úspěšném uložení změn. Kampaň je upravena.
+
+* Alternativně: Začíná na detailu kampaně
 
 ### Evidence konkurence
 #### UC8  - Přidání konkurenčního obchodu
