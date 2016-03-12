@@ -72,6 +72,18 @@ existuje profil uživatele, kterým se chce návštěvník přihlásit a součas
 autentizace proběhne úspěšně, může návštěvní (nyní už v roli uživatele) do
 uzavřené části systému.
 
+* Tento případ užití začíná na hlavní stránce veřejné části aplikace, kde se
+chce Návštěvník přihlásit do uzavřené části. Návštěvník klikne na odkaz
+"Vstoupit do administrace".
+* Systém zobrazí formulář pro přihlášení, tedy textový vstup na
+email a heslo.
+* Návštěvník zadá své přihlašovací údaje, které si zvolil při registraci do
+systému, případně které si aktualizoval pomocí administrace.
+* Systém ověří správnost vložených údajů, v případě validního vstupu vpustí
+uživatele do administrace.
+* Návštěvník je nyní na hlavní stránce administrace v roli Uživatele. Tím je
+přihlašování u konce.
+
 ### Správa kampaní
 #### UC5 - Vytvoření kampaně
 Umožňuje uživateli seskupit produkty, u kterých vyžaduje monitorování se
