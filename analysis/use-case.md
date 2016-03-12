@@ -20,21 +20,21 @@ systému, může jeho účet administrátor zablokovat.
 #### UC3 - Zablokování uživatele
 
 ### Správa kampaní
-#### UC - Vytvoření kampaně
-#### UC - Přidání sledovaných produktů do existujíc´
-#### UC - Úprava kampaně
+#### UC4 - Vytvoření kampaně
+#### UC5 - Přidání sledovaných produktů do existujíc´
+#### UC6 - Úprava kampaně
 
 ### Evidence konkurence
-#### UC - Přidání konkurenčního obchodu
-#### UC - Úprava údajů o produktu
-#### UC - Úprava údajů o obchodu
-#### UC - Správa sledovaných produktů
-#### UC - Správa sledovaných obchodů
+#### UC7  - Přidání konkurenčního obchodu
+#### UC8  - Úprava údajů o produktu
+#### UC9  - Úprava údajů o obchodu
+#### UC10 - Správa sledovaných produktů
+#### UC11 - Správa sledovaných obchodů
 
 ### Prioritizace konkurence
-#### UC - Nastavení priority
-#### UC - Vyhledání prioritní konkurence
+#### UC12 - Nastavení priority
+#### UC13 - Vyhledání prioritní konkurence
 
 ### Výstup sledování
-#### UC - Zobrazení výstupu
-#### UC - Exportování výstupu
+#### UC14 - Zobrazení výstupu
+#### UC15 - Exportování výstupu
