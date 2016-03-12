@@ -22,14 +22,54 @@ systému, může jeho účet administrátor zablokovat.
 
 ### Správa uživatelů
 #### UC1 - Registrace uživatele
+Umožňuje každému návštěvníkovi vytvořit si svůj uživatelský účet. Po registraci
+se z návštěvníka stává uživatel a může využívat uzavřenou část systému.
+
+* Případ užití začíná přichodem neregistrovaného Uživatele (Navštěvník) na web
+aplikace. Na odpovídající stránce si vybere možnost registrace.
+* Systém zobrazí návštěvníkovi formulář, vyžadující vyplnění jména, příjmení,
+emailu a hesla. Volitelně může zadat i bydliště a fakturační údaje.
+* Návštěvník vypní požadované údaje.
+* Systém zkontroluje validitu vložených údajů, v případě neplatnosti některého
+z údajů se registrační formulář znovu zobrazí.
+* Systém odešle Návštěvníkovi kontrolní email.
+* Návštěvník v obdrženém emailu rozklikne uvedený odkaz na ověření emailové
+adresy.
+* Systém spáruje navštívený odkaz s registrovaným účtem a účet aktivuje.
+* Z Návštěvníka se stává Uživatel a registrace je dokončena.
+
+* Alternativně: Účet zakládá administrator
+
 #### UC2 - Změna údajů uživatele
+Uživatel má možnost upravit informace ve svém profilu, které zadal během
+registrace.
+
 #### UC3 - Zablokování uživatele
+Dovoluje Administrátorovi znemožnit přístup Uživateli k jeho účtu, nevyužívá-li
+systém v souladu s podmínkami používání nebo je-li to bezpodmínečně nutné.
+
 #### UC4 - Přihlášení uživatele
+Dává návštěvníkovi možnost ověření identity pro vstup do aplikace. Pokud
+existuje profil uživatele, kterým se chce návštěvník přihlásit a současně
+autentizace proběhne úspěšně, může návštěvní (nyní už v roli uživatele) do
+uzavřené části systému.
 
 ### Správa kampaní
 #### UC5 - Vytvoření kampaně
+Umožňuje uživateli seskupit produkty, u kterých vyžaduje monitorování se
+stejným nastavením do jednoho celku. Nastavení se týká především intervalu
+aktualizace a formy výstupu.
+
 #### UC6 - Přidání sledovaných produktů do kampaně
+Umožňuje uživateli přidat do kampaně sledovaný produkt. Produkt je zboží, které
+si uživatel přeje sledovat jednoznačně určené EAN kódem. Vložit lze i produkt,
+který kampaň už obsahuje, v takovém případě bude existující produkt
+aktualizován.
+
 #### UC7 - Úprava kampaně
+Systém dovoluje uživateli vlastnosti kampaně měnit během její existence. Pokud
+to povaha změny dovoluje, její efekt se projeví ihned. V opačném případě se
+efekt projeví až s odpovídajícím zpožděním.
 
 ### Evidence konkurence
 #### UC8  - Přidání konkurenčního obchodu
