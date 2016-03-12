@@ -10,3 +10,5 @@
   * povinná pole registračního formuláře
   * vlastnosti produktu (EAN, název, ...)
 * XML pro vstup bude mít specifickou konfiguraci, kde jí v analýze zmínit?
+* Kde zmínit co se bude na jaké stránce nacházet?
+* Kde zmínit jaké všechny stránky systém obsahuje.
