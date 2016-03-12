@@ -90,6 +90,26 @@ Umožňuje uživateli seskupit produkty, u kterých vyžaduje monitorování se
 stejným nastavením do jednoho celku. Nastavení se týká především intervalu
 aktualizace a formy výstupu.
 
+* Vytváření nové kampaně začíná na hlavní stránce administrace. Uživatel vybere
+položku "Kampaně".
+* Systém vypíše uživateli seznam aktivních kampaní, které dříve vytvořil.
+* Uživatel klikne na tlačítko "Vytvořit kampaň".
+* Systém zobrazí formulář s povinnými informacemi o kampani. Uživatel musí
+vyplnit, jak často se má kampaň spouštět (jednou denně, jednou za tři dny,
+jednou týdně nebo pouze souhrnný měsíční report).
+* Uživatel nahraje XML soubor podle uvedené specifikace se seznamem produktů
+ke sledování.
+* Systém po kompletním nahrání souboru zkontroluje validitu vstupního souboru.
+* Uživatel klikne na "Vytvořit kampaň".
+* Systém zkontroluje validitu všech zadaných vstupů, v případně pozitivní
+validace založí kampaň v systému. Uživateli se zobrazí zpráva o úspěšném přidání
+kampaně.
+* Uživatel je nyní zpět na seznamu aktivních kampaní. Tím je vytváření kampaně
+u konce.
+
+* Alternativně: pordukty vkládá ručně
+* Alternativně: seznam konkurentů vkládá ručně
+
 #### UC6 - Přidání sledovaných produktů do kampaně
 Umožňuje uživateli přidat do kampaně sledovaný produkt. Produkt je zboží, které
 si uživatel přeje sledovat jednoznačně určené EAN kódem. Vložit lze i produkt,
