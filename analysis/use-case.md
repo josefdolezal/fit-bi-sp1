@@ -56,6 +56,16 @@ informace o svém účtu.
 Dovoluje Administrátorovi znemožnit přístup Uživateli k jeho účtu, nevyužívá-li
 systém v souladu s podmínkami používání nebo je-li to bezpodmínečně nutné.
 
+* Tento případ začíná na hlavní stránce administrace v momentě,
+kdy Administrátor chce zablokovat účet uživatele.
+* Administrátor zvolí záložku "Správa uživatelů".
+* Systém zobrazí seznam Uživatelů se stručnými informacemi o nich.
+* Administrátor vyhledá Uživatele, kterého chce zablokovat a vybere ho.
+* Systém požádá Administrátora o potvrzení zvolené akce.
+* Systém deaktivuje Uživatelský účet a všechny kampaně s ním spojené.
+* Uživatel je automaticky odhlášen a nemůže se znovu přihlásit.
+* Užitel je nyní zablokovaný a případ užití tím končí.
+
 #### UC4 - Přihlášení uživatele
 Dává návštěvníkovi možnost ověření identity pro vstup do aplikace. Pokud
 existuje profil uživatele, kterým se chce návštěvník přihlásit a současně
