@@ -63,11 +63,12 @@ Dovoluje Administrátorovi znemožnit přístup Uživateli k jeho účtu, nevyu�
 systém v souladu s podmínkami používání nebo je-li to bezpodmínečně nutné.
 
 * Tento případ začíná na hlavní stránce administrace v momentě,
-kdy Administrátor chce zablokovat účet uživatele.
+kdy Administrátor chce zablokovat účet Uživatele.
 * Administrátor zvolí záložku "Správa uživatelů".
 * Systém zobrazí seznam Uživatelů se stručnými informacemi o nich.
 * Administrátor vyhledá Uživatele, kterého chce zablokovat a vybere ho.
 * Systém požádá Administrátora o potvrzení zvolené akce.
+* Administrátor potvrdí blokaci účtu.
 * Systém deaktivuje Uživatelský účet a všechny kampaně s ním spojené.
 * Uživatel je automaticky odhlášen a nemůže se znovu přihlásit.
 * Užitel je nyní zablokovaný a případ užití tím končí.
