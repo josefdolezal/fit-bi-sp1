@@ -27,7 +27,7 @@ se z návštěvníka stává uživatel a může využívat uzavřenou část sys
 
 * Případ užití začíná přichodem neregistrovaného Uživatele (Navštěvník) na web
 aplikace. Na odpovídající stránce si vybere možnost registrace.
-* Systém zobrazí návštěvníkovi formulář, vyžadující vyplnění jména, příjmení,
+* Systém zobrazí návštěvníkovi formulář vyžadující vyplnění jména, příjmení,
 emailu a hesla. Volitelně může zadat i bydliště a fakturační údaje.
 * Návštěvník vypní požadované údaje.
 * Systém zkontroluje validitu vložených údajů, v případě neplatnosti některého
@@ -38,7 +38,13 @@ adresy.
 * Systém spáruje navštívený odkaz s registrovaným účtem a účet aktivuje.
 * Z Návštěvníka se stává Uživatel a registrace je dokončena.
 
-* Alternativně: Účet zakládá administrator
+* **Alternativně**: Účet zakládá administrator
+* Případ užití začíná na hlavní stránce administrace. Administrátor klikne na
+odkaz "Uživatelé".
+* Systém zobrazí seznam aktivních Uživatelů.
+* Administrátor klikne na odkaz "Přidat uživatele".
+* Systém zobrazí formulář vyžadující vyplnění jména, příjmení, emailu a hesla.
+* Administrátor vypní údaje specifikující nového uživatele.
 
 #### UC2 - Změna údajů uživatele
 Uživatel má možnost upravit informace ve svém profilu, které zadal během
