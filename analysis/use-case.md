@@ -176,7 +176,9 @@ provedení změn Uživatel uložení dat potvrdí tlačítkem "Uložit".
 kampaně.
 * Uživateli se zobrazí zpráva o úspěšném uložení změn. Kampaň je upravena.
 
-* Alternativně: Začíná na detailu kampaně
+* **Alternativně**: Začíná na detailu kampaně
+* Uživatel je na stránce detailu kampaně. Klikne na odkaz "Upravit nastavení
+kampaně".
 
 ### Evidence konkurence
 #### UC8  - Přidání konkurenčního obchodu
