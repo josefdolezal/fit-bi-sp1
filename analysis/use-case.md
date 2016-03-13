@@ -38,7 +38,7 @@ adresy.
 * Systém spáruje navštívený odkaz s registrovaným účtem a účet aktivuje.
 * Z Návštěvníka se stává Uživatel a registrace je dokončena.
 
-* **Alternativně**: Účet zakládá administrator
+* **Alternativně**: Účet zakládá administrator (1-4)
 * Případ užití začíná na hlavní stránce administrace. Administrátor klikne na
 odkaz "Uživatelé".
 * Systém zobrazí seznam aktivních Uživatelů.
@@ -107,6 +107,7 @@ jednou týdně nebo pouze souhrnný měsíční report).
 * Uživatel nahraje XML soubor podle uvedené specifikace se seznamem produktů
 ke sledování.
 * Systém po kompletním nahrání souboru zkontroluje validitu vstupního souboru.
+* Uživatel zaškrtne "Vyhledat konkurenci automaticky".
 * Uživatel klikne na "Vytvořit kampaň".
 * Systém zkontroluje validitu všech zadaných vstupů, v případně pozitivní
 validace založí kampaň v systému. Uživateli se zobrazí zpráva o úspěšném přidání
@@ -114,8 +115,14 @@ kampaně.
 * Uživatel je nyní zpět na seznamu aktivních kampaní. Tím je vytváření kampaně
 u konce.
 
-* Alternativně: pordukty vkládá ručně
-* Alternativně: seznam konkurentů vkládá ručně
+* **Alternativně**: Produkty vkládá ručně (5-7)
+* Uživatel nemá k dispozici XML seznam produktů a vkládá je tedy ručně. U
+každého produktu vyplní povinné údaje.
+
+* **Alternativně**: Seznam konkurentů vkládá ručně (7-8)
+* Uživatel zaškrtne "Sledovat vybranou konkurenci".
+* Systém zobrazí pole pro textový vstup pro vložení URL adres.
+* Uživatel vloží seznam URL adres konkurentů, které chce sledovat.
 
 #### UC6 - Přidání sledovaných produktů do kampaně
 Umožňuje uživateli přidat do kampaně sledovaný produkt. Produkt je zboží, které
