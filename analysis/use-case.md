@@ -136,17 +136,27 @@ existující kampaně přidat nové produkty. Klikne na odkaz "Kampaně".
 * Uživatel vyhledá kampaň, do které chce nové produkty přidat. A klikne na
 odkaz "Přidat produkty ke sledování".
 * Systém zobrazí formulář pro nahrání souboru XML (podle uvedené specifikace)
-se seznamem produktů.
-* Systém ověří validitu nahraného souboru. Je-li soubor validní podle
+se seznamem produktů a formulář pro přidání produktů ručně.
+* Uživatel vybere možnost nahrát soubor XML a nahraje ho do aplikace.
+* Systém načte data z nahraného XML.
+* Systém ověří validitu načtených dat. Jsou-li data validní podle
 specifikace, nové produkty budou v dalším cyklu také sledovány. Nacházejí-li
-se v souboru produkty již dříve přidané do kampaně, systém aktualizuje jejich
+se v datech produkty již dříve přidané do kampaně, systém aktualizuje jejich
 vlastnosti tak, aby odpovídaly vložným datům, ale jejich historie zůstane
 nezměněna.
 * Uživatel je přesměrován na detail upravované kampaně a je informován o
 úspěšném přidání. Přidávání produktů je u konce.
 
-* Alternativně: Uživatel je na stránce kampaně
-* Alternativně: Uživatel zadá produkty ručně
+* **Alternativně**: Uživatel je na stránce kampaně (1-3)
+* Uživatel je na stránce detailu kampaně. Klikne na odkaz "Přidat produkty
+ke sledování".
+
+* **Alternativně**: Uživatel zadá produkty ručně
+* Uživatel vybere možnost přidat produkty ručně.
+* Systém zobrazí povinná pole pro přidání nových polí.
+* Uživatel vyplní zobrazená pole.
+* Systém načte data z vyplněného formuláře.
+
 
 #### UC7 - Úprava kampaně
 Systém dovoluje uživateli vlastnosti kampaně měnit během její existence. Pokud
