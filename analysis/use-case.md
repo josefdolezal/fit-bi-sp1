@@ -204,10 +204,29 @@ naparsování.
 užití je u konce
 
 #### UC9  - Úprava údajů o produktu
+Systém může při skenování konkurenčních eshopů narazit na chybu, kdy se mu údaje
+ z webu nepodaří správně namapovat na atributy produktu. V takovém případě může
+ Administrátor mapování ručně upravit.
+
 #### UC10 - Úprava údajů o obchodu
+Systém interně eviduje informace o jednotlivých eshopech. Jelikož muže dojít ke
+špatnému vyhodnocení údajů nebo jejich změně, Administrátorovi je poskytnuto
+rozhraní pro jejich editaci.
+
 #### UC11 - Správa sledovaných produktů
+Aby Uživatel mohl za běhu kampaně upravit údaje o produktech které sleduje,
+nabízí systém prostředí pro úpravu vložených produktů. Efekt změn se projeví při
+následujícím cyklu sledování.
+
 #### UC12 - Správa sledovaných obchodů
+Uživatel může v systému nastavit preferenci konkurenčních webů. V nastavení
+kampaně může vybrat, jaké konkurenční weby jsou pro něj důležité a tím ušetřit
+množství provedených skenování systému.
+
 #### UC17 - Parsování webů Administrátorem
+Systém nabízí prostředí pro Administrátora, ve kterém mu zobrazí náhled stránky,
+kterou bude skenovat. Administrátor ručně zvolí, kde na stránce se vyskytují
+sledované atributy produktu.
 
 ### Prioritizace konkurence
 #### UC13 - Nastavení priority
