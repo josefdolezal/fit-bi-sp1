@@ -182,10 +182,32 @@ kampaně".
 
 ### Evidence konkurence
 #### UC8  - Přidání konkurenčního obchodu
+Je možné, že systém požadovanou konkurenci nenajde, případně ji zná uživatel
+dopředu. Tento případ užití tedy umožnuje u produktu explicitně specifikovat
+množinu eshopu, na kterých se produkt nachází.
+
+* Případ užití začíná na hlavní stránce eshopu, kde uživatel klikne na odkaz
+"Kampaně".
+* Systém zobrazí seznam kampaní, které uživatel již dříve založil.
+* Uživatel v seznamu vyhledá kampaň, ke které chce přidat nové URL adresy
+konkurence. Po nalezení na Uživatel klikne na název kampaně v seznamu.
+* Systém zobrazí Uživateli podrobné informace o kampani.
+* Uživatel klikne na odkaz "Přidat konkurenční web".
+* Systém uživateli zobrazí fomulář s textovým vstupem.
+* Uživatel vyplní URL adresy konkurenčních eshopů, které chce sledovat. Uložení
+změn provede tlačítkem "Uložit".
+* Systém projde seznam konkurentů, pokud některé zadané URL nezná a nedokáže
+je sám zpracovat, notifikuje Administrátora a připraví tyto URL k ručnímu
+naparsování.
+* <<include UC17>>
+* Systém zpracuje nově sledovanou konkurenci a v příštím cyklu skenování. Případ
+užití je u konce
+
 #### UC9  - Úprava údajů o produktu
 #### UC10 - Úprava údajů o obchodu
 #### UC11 - Správa sledovaných produktů
 #### UC12 - Správa sledovaných obchodů
+#### UC17 - Parsování webů Administrátorem
 
 ### Prioritizace konkurence
 #### UC13 - Nastavení priority
