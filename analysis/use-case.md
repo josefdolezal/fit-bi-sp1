@@ -209,8 +209,6 @@ nabízí systém prostředí pro úpravu vložených produktů. Efekt změn se p
 následujícím cyklu sledování.
 
 * <<include UC17>>
-* Uživatel vybere kampaň,ve které chce spravovat produkty.
-* Systém zobrazí hlavní stránku kampaně.
 * Uživatel klikne na odkaz "Seznam produktů v kampani".
 * Systém zobrazí seznam produktů, vložené z XLS souboru nebo ručně Uživatelem
 do kampaně.
