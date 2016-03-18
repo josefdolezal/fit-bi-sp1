@@ -62,8 +62,8 @@ informace o svém účtu.
 Dovoluje Administrátorovi znemožnit přístup Uživateli k jeho účtu, nevyužívá-li
 systém v souladu s podmínkami používání nebo je-li to bezpodmínečně nutné.
 
-* Tento případ začíná na hlavní stránce administrace v momentě,
-kdy Administrátor chce zablokovat účet Uživatele.
+* Tento případ začíná na hlavní stránce administrace v momentě, kdy
+Administrátor chce zablokovat účet Uživatele.
 * Administrátor zvolí záložku "Správa uživatelů".
 * Systém zobrazí seznam Uživatelů se stručnými informacemi o nich.
 * Administrátor vyhledá Uživatele, kterého chce zablokovat a vybere ho.
@@ -130,11 +130,8 @@ si uživatel přeje sledovat jednoznačně určené EAN kódem. Vložit lze i pr
 který kampaň už obsahuje, v takovém případě bude existující produkt
 aktualizován.
 
-* Tento případ užití začíná na hlavní stránce administrace. Uživatel chce do
-existující kampaně přidat nové produkty. Klikne na odkaz "Kampaně".
-* Systém zobrazí seznam aktivních kampaní, které Uživatel již dříve vytvořil.
-* Uživatel vyhledá kampaň, do které chce nové produkty přidat. A klikne na
-odkaz "Přidat produkty ke sledování".
+* <<include UC17>>
+* Uživatel klikne na odkaz "Přidat produkty ke sledování".
 * Systém zobrazí formulář pro nahrání souboru XML (podle uvedené specifikace)
 se seznamem produktů a formulář pro přidání produktů ručně.
 * Uživatel vybere možnost nahrát soubor XML a nahraje ho do aplikace.
@@ -163,13 +160,7 @@ Systém dovoluje uživateli vlastnosti kampaně měnit během její existence. P
 to povaha změny dovoluje, její efekt se projeví ihned. V opačném případě se
 efekt projeví až s odpovídajícím zpožděním.
 
-* Tento případ užití začíná na hlavní stránce administrace. Uživatel kline na
-odkaz "Kampaně".
-* Systém zobrazí seznam aktivních kampaní, které uživatel již dříve přidal.
-* Uživatel vyhledá kampaň, kterou chce editovat a klikne na odkaz "Nastavit
-kampaň".
-* Systém zobrazí formulář s informacemi o kampani a seznam produktů, které
-kampaň obsahuje.
+<<include UC17>>
 * Uživatel může změnit veškeré nastavení kampaně včetně seznamu produktů. Po
 provedení změn Uživatel uložení dat potvrdí tlačítkem "Uložit".
 * Systém provede validaci dat a přesměruje uživatele na detail editované
@@ -186,12 +177,7 @@ Je možné, že systém požadovanou konkurenci nenajde, případně ji zná už
 dopředu. Tento případ užití tedy umožnuje u produktu explicitně specifikovat
 množinu eshopu, na kterých se produkt nachází.
 
-* Případ užití začíná na hlavní stránce eshopu, kde uživatel klikne na odkaz
-"Kampaně".
-* Systém zobrazí seznam kampaní, které uživatel již dříve založil.
-* Uživatel v seznamu vyhledá kampaň, ke které chce přidat nové URL adresy
-konkurence. Po nalezení na Uživatel klikne na název kampaně v seznamu.
-* Systém zobrazí Uživateli podrobné informace o kampani.
+* <<include UC17>>
 * Uživatel klikne na odkaz "Přidat konkurenční web".
 * Systém uživateli zobrazí fomulář s textovým vstupem.
 * Uživatel vyplní URL adresy konkurenčních eshopů, které chce sledovat. Uložení
@@ -199,34 +185,77 @@ změn provede tlačítkem "Uložit".
 * Systém projde seznam konkurentů, pokud některé zadané URL nezná a nedokáže
 je sám zpracovat, notifikuje Administrátora a připraví tyto URL k ručnímu
 naparsování.
-* <<include UC17>>
+* <<include UC10>>
 * Systém zpracuje nově sledovanou konkurenci a v příštím cyklu skenování. Případ
 užití je u konce
 
 #### UC9  - Úprava údajů o produktu
 Systém může při skenování konkurenčních eshopů narazit na chybu, kdy se mu údaje
- z webu nepodaří správně namapovat na atributy produktu. V takovém případě může
- Administrátor mapování ručně upravit.
+z webu nepodaří správně namapovat na atributy produktu. V takovém případě může
+Administrátor mapování ručně upravit.
 
-#### UC10 - Úprava údajů o obchodu
-Systém interně eviduje informace o jednotlivých eshopech. Jelikož muže dojít ke
-špatnému vyhodnocení údajů nebo jejich změně, Administrátorovi je poskytnuto
-rozhraní pro jejich editaci.
+ * Případ užití začíná na hlavní stránce systému, kde Administrátor klikne na
+ odkaz "Evidované produkty".
+ * Systém zobrazí seznam evidovaných produktů. Na vrchu seznamu se zobrazí
+ produkty, které nebyl Systém schopný zpracovat.
+ * Administrátor vybere produkt, u kterého chce přemapovat parsování atributů.
+ * << include UC10 >>
+ * Uživatel je přesměrován na seznam evidovaných produktů. Případ užití je u
+ konce.
 
 #### UC11 - Správa sledovaných produktů
 Aby Uživatel mohl za běhu kampaně upravit údaje o produktech které sleduje,
 nabízí systém prostředí pro úpravu vložených produktů. Efekt změn se projeví při
 následujícím cyklu sledování.
 
+* <<include UC17>>
+* Uživatel vybere kampaň,ve které chce spravovat produkty.
+* Systém zobrazí hlavní stránku kampaně.
+* Uživatel klikne na odkaz "Seznam produktů v kampani".
+* Systém zobrazí seznam produktů, vložené z XLS souboru nebo ručně Uživatelem
+do kampaně.
+* Uživatel v seznamu produktů vybere produkt, který dále v kampani sledovat
+nechce.
+* Systém bez nutnostni aktualizace stránky produkt z kampaně odebere. Případ
+užití končí.
+
+* **Alternativně**: Uživatel upravuje produkt
+
 #### UC12 - Správa sledovaných obchodů
 Uživatel může v systému nastavit preferenci konkurenčních webů. V nastavení
 kampaně může vybrat, jaké konkurenční weby jsou pro něj důležité a tím ušetřit
 množství provedených skenování systému.
 
-#### UC17 - Parsování webů Administrátorem
+* <<include UC17>>
+* Uživatel kline na odkaz "Vybrat preferouvanou konkurenci".
+* Systém zobrazí seznam konkurenčních webů, které se v rámci kampaně sleduje.
+* Uživatel zvolí u jednotlivých webů, zda se mají při skenování zohlednit nebo
+vynechat. Změnu Uživatel potvrdí tlačítkem "Uložit".
+* Systém změnu uloží a přesměruje uživatele na stránku kampaně. Případ užití
+je u konce.
+
+#### UC10 - Parsování webů Administrátorem
 Systém nabízí prostředí pro Administrátora, ve kterém mu zobrazí náhled stránky,
 kterou bude skenovat. Administrátor ručně zvolí, kde na stránce se vyskytují
 sledované atributy produktu.
+
+* Systém zobrazí náhled parsovaného webu s možností myší vybrat atributy
+produktu.
+* Uživatel vybere seznam atributů, které chce upravit.
+* Systém umožní Uživateli postupně vybrané atributy myší vybrat z elementů na
+stránce.
+* Uživatel potvrdí ukončení přemapování atributů tlačítkem "Uložit".
+* Systém zkontroluje validitu atributů (datové typy) a konfiguraci uloží.
+
+#### UC17 - Výběr kampaně Uživatelem
+Výběr uložené kampaně ze seznamu aktivních kampaní.
+
+* Případ užití začíná na hlavní stránce administrace. Uživatel klikne na odkaz
+"Kampaně".
+* Systém zobrazí seznam kampaní, které Uživatel dříve přidal.
+* Uživatel vybere ze seznamu kampaň, kterou chce upravit a klikne na "Upravit
+kampaň".
+* Systém zobrazí detail kampaně.
 
 ### Prioritizace konkurence
 #### UC13 - Nastavení priority
