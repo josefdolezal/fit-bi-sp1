@@ -130,7 +130,7 @@ si uživatel přeje sledovat jednoznačně určené EAN kódem. Vložit lze i pr
 který kampaň už obsahuje, v takovém případě bude existující produkt
 aktualizován.
 
-* <<include UC17>>
+* <<include UC18>>
 * Uživatel klikne na odkaz "Přidat produkty ke sledování".
 * Systém zobrazí formulář pro nahrání souboru XML (podle uvedené specifikace)
 se seznamem produktů a formulář pro přidání produktů ručně.
@@ -160,7 +160,7 @@ Systém dovoluje uživateli vlastnosti kampaně měnit během její existence. P
 to povaha změny dovoluje, její efekt se projeví ihned. V opačném případě se
 efekt projeví až s odpovídajícím zpožděním.
 
-<<include UC17>>
+<<include UC18>>
 * Uživatel může změnit veškeré nastavení kampaně včetně seznamu produktů. Po
 provedení změn Uživatel uložení dat potvrdí tlačítkem "Uložit".
 * Systém provede validaci dat a přesměruje uživatele na detail editované
@@ -177,7 +177,7 @@ Je možné, že systém požadovanou konkurenci nenajde, případně ji zná už
 dopředu. Tento případ užití tedy umožnuje u produktu explicitně specifikovat
 množinu eshopu, na kterých se produkt nachází.
 
-* <<include UC17>>
+* <<include UC18>>
 * Uživatel klikne na odkaz "Přidat konkurenční web".
 * Systém uživateli zobrazí fomulář s textovým vstupem.
 * Uživatel vyplní URL adresy konkurenčních eshopů, které chce sledovat. Uložení
@@ -208,7 +208,7 @@ Aby Uživatel mohl za běhu kampaně upravit údaje o produktech které sleduje,
 nabízí systém prostředí pro úpravu vložených produktů. Efekt změn se projeví při
 následujícím cyklu sledování.
 
-* <<include UC17>>
+* <<include UC18>>
 * Uživatel klikne na odkaz "Seznam produktů v kampani".
 * Systém zobrazí seznam produktů, vložené z XLS souboru nebo ručně Uživatelem
 do kampaně.
@@ -224,7 +224,7 @@ Uživatel může v systému nastavit preferenci konkurenčních webů. V nastave
 kampaně může vybrat, jaké konkurenční weby jsou pro něj důležité a tím ušetřit
 množství provedených skenování systému.
 
-* <<include UC17>>
+* <<include UC18>>
 * Uživatel kline na odkaz "Vybrat preferouvanou konkurenci".
 * Systém zobrazí seznam konkurenčních webů, které se v rámci kampaně sleduje.
 * Uživatel zvolí u jednotlivých webů, zda se mají při skenování zohlednit nebo
@@ -245,7 +245,7 @@ stránce.
 * Uživatel potvrdí ukončení přemapování atributů tlačítkem "Uložit".
 * Systém zkontroluje validitu atributů (datové typy) a konfiguraci uloží.
 
-#### UC17 - Výběr kampaně Uživatelem
+#### UC18 - Výběr kampaně Uživatelem
 Výběr uložené kampaně ze seznamu aktivních kampaní.
 
 * Případ užití začíná na hlavní stránce administrace. Uživatel klikne na odkaz
