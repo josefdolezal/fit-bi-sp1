@@ -1,0 +1,14 @@
+version: '2'
+services:
+    data:
+        image: busybox:latest
+        volumes:
+            - /var/jenkins_home
+        command: ["chown", "-v", "-R", "1000:1000", "/var/jenkins_home"]
+    jenkins:
+        image: jenkins:alpine
+        volumes_from:
+            - data
+        ports:
+            - "8080:8080"
+            - "5000:5000"
