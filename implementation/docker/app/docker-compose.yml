@@ -1,0 +1,23 @@
+version: '2'
+services:
+    rabbitmq_data:
+        image: busybox:latest
+        volumes:
+            - /var/lib/rabbitmq
+        command: ["chown", "-v", "-R", "1000:1000", "/var/lib/rabbitmq"]
+    rabbitmq:
+        image: rabbitmq:management
+        volumes_from:
+            - rabbitmq_data
+        ports:
+            - "15672:15672"
+        environment:
+            RABBITMQ_DEFAULT_USER: compler
+            RABBITMQ_DEFAULT_PASS: compler
+        hostname: rabbitMQ
+    tomcat:
+        image: tomcat:latest
+        links:
+            - rabbitmq:rabbitMQ
+        ports:
+            - "8888:8080"
