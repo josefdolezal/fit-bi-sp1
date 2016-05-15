@@ -1,0 +1,13 @@
+version: '2'
+services:
+    tomcat_data:
+        image: busybox:latest
+        volumes:
+            - /usr/local/tomcat
+        command: ["chown", "-v", "-R", "1000:1000", "/usr/local/tomcat"]
+    rabbitmq:
+        image: tomcat:latest
+        volumes_from:
+            - tomcat_data
+        ports:
+            - "8888:8080"
