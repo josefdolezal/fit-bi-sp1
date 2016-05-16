@@ -16,7 +16,7 @@ services:
             RABBITMQ_DEFAULT_PASS: compler
         hostname: rabbitMQ
     tomcat:
-        image: tomcat:latest
+        image: tomcat:7
         links:
             - rabbitmq:rabbitMQ
         ports:

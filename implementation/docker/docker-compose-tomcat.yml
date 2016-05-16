@@ -5,7 +5,7 @@ services:
         volumes:
             - /usr/local/tomcat
         command: ["chown", "-v", "-R", "1000:1000", "/usr/local/tomcat"]
-    rabbitmq:
+    tomcat:
         image: tomcat:latest
         volumes_from:
             - tomcat_data
